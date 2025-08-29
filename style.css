@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+  color: #333;
+  text-align: center;
+}
+
+.container {
+  padding: 2rem;
+}
+
+.scene {
+  margin-top: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.cake {
+  position: relative;
+  width: 100px;
+  height: 150px;
+  margin: 2rem auto;
+  background: chocolate;
+  border-radius: 10px;
+}
+
+.candle {
+  position: absolute;
+  top: -30px;
+  left: 45px;
+  width: 10px;
+  height: 30px;
+  background: white;
+  border-radius: 2px;
+}
+
+.flame {
+  position: absolute;
+  top: -40px;
+  left: 47px;
+  width: 6px;
+  height: 10px;
+  background: rgb(231, 106, 3);
+  border-radius: 50%;
+  animation: flicker 1s infinite;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+button {
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  background: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.slideshow img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.slideshow img {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slideshow img.show {
+  opacity: 1;
+}

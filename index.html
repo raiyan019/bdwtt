@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <audio id="bgMusic" autoplay loop>
+      <source src="/song/happy-birthday-314197.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <div class="container">
+    <div id="candleScene" class="scene">
+      <h1>🎉 Happy Birthday, Bestie (locker room) ! 🎉</h1> <br>
+      <div class="cake">
+        <div class="candle"></div>
+        <div class="flame"></div>
+      </div>
+      <button onclick="startSlideshow()">Make a Wish 🎂</button>
+    </div>
+
+      </div>
+
+      <div id="slideshowScene" class="scene hidden">
+        <h2>📸 Memories Together</h2>
+        <div class="slideshow">
+          <img id="slideshowImage" src="" alt="Memory" />
+        </div>
+      </div>
+
+      <div id="finalScene" class="scene hidden">
+        <h2>💖 A Message for You</h2>
+        <p>
+          On your special day, I just want to say how grateful I am to have a
+          supportive friend like you.<br> You are wholla positive vibe g. <br> May your year be filled with laughter, love, and endless
+          adventures.<br> You deserve all the happiness in the world. Happy Birthday
+          again! 🎈
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
